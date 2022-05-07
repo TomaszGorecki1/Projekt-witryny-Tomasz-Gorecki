@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--IKONA W KARCIE-->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://images.unsplash.com/photo-1611262588024-d12430b98920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+    />
+    <!--CZCIONKA-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tomasz Górecki | Nigdy nie mam czasu</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <!--OBRAZEK W NAVBARZE-->
+        <img
+          src="https://images.cooltext.com/5600106.gif"
+          class="nav__logo"
+          id="logo"
+        />
+        <!--OPCJE W NAVBARZE-->
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Programowanie</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Star Wars</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3"
+              >Tenis, giełda i książki które polecam</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!--HEADER SEKCJA-->
+      <div class="header__title">
+        <h1>
+          Brak
+          <span class="highlight">czasu</span>
+          powoduje<br />
+          <span class="highlight">Przewartościowanie </span>
+          tego co <span class="highlight">robimy.</span><br />
+        </h1>
+        <h4>Przez szkołę musiałem ograniczyć część z moich pasji :(</h4>
+        <button class="btn--text btn--scroll-to">
+          Te które się ostały &DownArrow;
+        </button>
+        <img src="img/logo.jpg" class="header__img" />
+      </div>
+    </header>
+    <!--SEKCJA O PROGRAMOWANIU-->
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Programowanie</h2>
+        <h3 class="section__header">
+          Od około roku uczę się front-endu we współpracy z jedną z lokalnych
+          firm IT.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="https://images.unsplash.com/photo-1585247226801-bc613c441316?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+          data-src="https://images.unsplash.com/photo-1585247226801-bc613c441316?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Dlaczego wev development?</h5>
+          <p>
+            Wybrałem fron-end w web-devie ze względu na przystępność i prostotę
+            w jego tworzeniu, przy jednoczesnym zwróceniu uwagi na naprawdę duże
+            zaptorzebowanie na rynku na tego typu stanowiska przy świetnych
+            zarobkach. Jest to na tyle proste, że absolutnie każdy potrafiący
+            się zmotywować jest w stanie w ciągu 2 lat przebranżowić się i
+            zacząć pracę jako junior.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Najważniejszy jest progres</h5>
+          <p>
+            W programowaniu najważniejszy jest ciągły rozwój, mój plan rozwoju
+            na najbliższy czas +/- wygląda jak na mapce obok. Aczkolwiek ze
+            względu na to jak dużo czasu trzeba poświęcić na szkołę nie wiem czy
+            uda mi się aż tyle nauczyć.
+          </p>
+        </div>
+        <img
+          src="img/roadmap.jpg"
+          data-src="img/roadmap.jpg"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"
+          data-src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Skąd ja biorę wiedzę i jak się uczę?</h5>
+          <p>
+            Do tej pory z moich doświadczeń najlepszym źródłem są płatne kursy
+            na udemy/youtube/i pokrewnych platformach, ze względu na łatwy
+            kontakt z twórcą, bieżące aktualizacje i wsparcie społeczności.
+            Aczkolwiek aby rozpocząć naukę wystarczą darmowe kursy z youtube'a,
+            ale nie taki jak kursy Mirosława Zelenta które są świetne aby zdać
+            jakiś egzamin czy inny papierek, ale takie (najlepiej po Angielsku)
+            które faktycznie uczą zawodu metodą tutoringu i projektu a nie
+            wykładu jako wiedzy objawionej.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Sekcja o Star Warsach-->
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Star Wars</h2>
+        <h3 class="section__header">
+          Z zakresu pop-culture najbardziej lubię Star Wars.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Animacje
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Seriale
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Filmy
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <img src="img/icona.png" style="width: 70px" />
+          </div>
+          <h5 class="operations__header">
+            O dziwo, animacje takie jak Clone-Wars i Rebels
+          </h5>
+          <p>
+            Jednymi z moich ulubionych dzieł z zakresu Star-Wars są animacje,
+            przez niektórych hejtowane przezemnie bardzo lubiane. W
+            szczególności Clone Wars i to nie tylko to stare Lucas'owskie równie
+            mocno lubie ostani disney'owski serial jak i disney'owskie Rebels.
+            Lubię te seriale głównie dlatego, że niesawowicie rozszerzają
+            uniwersum np. wątek Mandalorian.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <img src="img/icona.png" style="width: 70px" />
+          </div>
+          <h5 class="operations__header">
+            Seriale Live-Action czyli nowżytna epoka już pod władzą Disney'a
+          </h5>
+          <p>
+            Może i zostanę zjechany, aczkolwiek te seriale wydawane na D+ są
+            świetne, Mandalorian, Bad-Batch, Book of Boba Fett jak i nadchodzący
+            Obi-Wan robią ogromne wrażenie i sprawijaą kupę fanu, przynajmiej
+            mi.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <img src="img/icona.png" style="width: 70px" />
+          </div>
+          <h5 class="operations__header">Filmy</h5>
+          <p>
+            Oryginalna Trylogia - mimo że kinematograficznie średniawa to
+            niezmienia to faktu że ze względu na sentyment uwielbiam te filmy,
+            prequele mimo że nielubiane przez społeczność lubię ale to chyba
+            tylko sentyment xD. Nową trylogię pomijam, te filmy są tak złe i
+            słabe że szkoda gadać .
+            <a
+              href="https://tomaszgorecki1.github.io/Podstrona-Informatyka-Tomasz-Gorecki/"
+              >Link do mojego starego projektu o SW</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Sekcja z pokazem slajdów-->
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">
+          Tenis, giełda i książki które polecam
+        </h2>
+        <h3 class="section__header">
+          Kilka slajdzików o moich zainteresowaniach poza powyższymi.
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Tenis stołowy</h5>
+            <blockquote class="testimonial__text">
+              Jestem aktywnym graczem tenisa stołowego w lokalnym klubie. Gram w
+              lokalnych turniejach dla juniorów, w prawdzie ze względu na to, że
+              szkoła zabrała mi większość czasu i ambicji zrezygnowałem z
+              profesjonalnej gry na rzecz rekreacyjnej, co nie zmienia faktu, że
+              tenisa bardzo lubię i zawsze chętnie gram.
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Giełda - drugi wilk z Wall Street xD
+            </h5>
+            <blockquote class="testimonial__text">
+              Od kilku miesięcy inwestuję część pieniedzy które uda mi się
+              zarobić w pracy lub w dorywczych fuchach. Niestety moje pierwsze
+              inwestycje były raczej stratą i cenną lekcją, ale po przeczytaniu
+              kilku książek i głębszemu zainteresowaniu się tematem(ciągle się
+              rozwijam i uczę się tego jak inwestować), przyjąłem strategię
+              inwestycyjną Benjamin'a Graham'a i Warrena Buffeta i zgodnie z nią
+              powoli buduję zdywersyfikowany portfel inwestycyjny.
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Ksiązki, które miały ogromny wpływ na mnie
+            </h5>
+            <blockquote class="testimonial__text">
+              Naszczęście mimo iż szkoła zrobiła absolutnie wszystko co w jej
+              mocy aby zniechęcić mnie do czytania(po części się jej to udało)
+              to udało mi się zmobilizować aby zacząć samemu czytać i się
+              rozwijać. Książki zaraz po podcastach to moje ulubione źródło
+              wiedzy o świecie nie-IT. Z polecanych przezemnie tytułów to
+              napewno "Multiple Streams of Income" - Roberta G.Allena, "The
+              Slight Edge" - Jeffa Olsona, "Selekcje" - Mikołaja Marceli i "The
+              Inteligent Investor" - Benjamina Grahama.
+            </blockquote>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <!--stopka-->
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Zapraszam do kontaktu ze mną w sprawach biznesowych jak i błachych,
+          nie obiecuję, że szybko odpiszę!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Kontakt</button>
+    </section>
+
+    <!--Okienko z kontakem-->
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Mój adres e-mail: <br />
+        <span class="highlight">tomasz.gorecki16@gmail.com</span>
+      </h2>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
